@@ -198,6 +198,7 @@ const rgblight_segment_t* const PROGMEM rgb_layers[] = RGBLIGHT_LAYERS_LIST(
 // Enable the LED layers
 void keyboard_post_init_user(void) {
     rgblight_layers = rgb_layers;
+    rgblight_sethsv(189, 83, 100);
 }
 
 // Set activation conditions for each LED layers
